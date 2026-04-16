@@ -8,3 +8,7 @@ configs/
 scripts/
 train.py
 CLAUDE.md
+
+# Python cache files
+__pycache__/
+*.pyc
