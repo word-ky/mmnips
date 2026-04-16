@@ -1,0 +1,10 @@
+﻿# Local runtime and secrets
+.autodl/
+remote-runs/
+dist/
+
+# Keep this repository focused on analysis-pack files.
+configs/
+scripts/
+train.py
+CLAUDE.md
