@@ -97,3 +97,12 @@ If the project is already in a Git repo and you want those files on GitHub:
 ```powershell
 pwsh scripts/publish-github.ps1 -Message "Update AutoDL analysis pack"
 ```
+
+## Python Utilities
+
+Small local Python helpers live under `tools/`:
+
+- `python -m tools.list_context_files`: list tracked files in `context/` and `prompts/`
+- `python -m tools.print_last_release`: print `.autodl/last-release`
+- `python -m tools.list_fetched_runs`: show fetched runs under `remote-runs/`
+- `python -m tools.summarize_fetched_run`: summarize the newest fetched run or a specific run id
