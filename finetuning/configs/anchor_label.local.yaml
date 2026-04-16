@@ -1,0 +1,33 @@
+coco_json: "/path/to/instances_train2017.json"
+output_jsonl: "/path/to/anchor_train.jsonl"
+
+# Optional. If set, output image_name becomes: image_root + file_name.
+image_root: ""
+
+# Mixture-of-coordinate systems (coarse -> fine)
+grids: [100, 250, 500]
+
+# Grid selection rule:
+# 1 / (2G) <= eta * min(w_ratio, h_ratio)
+selection_eta: 0.25
+
+# Scale quantization bins for sqrt(area_ratio)
+scale_bins: [0.03, 0.06, 0.10, 0.16, 0.25, 0.40, 0.64, 1.0]
+
+# Ratio quantization bins for w / h
+ratio_bins: [0.25, 0.5, 0.75, 1.0, 1.5, 2.0, 3.0, 4.0]
+
+include_crowd: false
+min_box_size: 2.0
+max_images: 0
+
+# target_text token style:
+# - plain:    <2><311><194><4><3>
+# - prefixed: <g2><x_311><y_194><s4><r3>
+token_style: "plain"
+
+# Sort anchors within each phrase
+sort_instances: "xy"
+
+# Optional stats file
+save_stats_json: "/path/to/anchor_train.stats.json"

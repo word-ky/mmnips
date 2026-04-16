@@ -10,6 +10,7 @@ sam2/
 .Python
 build/
 develop-eggs/
+configs/_3_large_training/3.4exp/visualize_data_before_start_class_label/
 dist/
 downloads/
 eggs/
@@ -26,9 +27,14 @@ share/python-wheels/
 .installed.cfg
 *.egg
 MANIFEST
+evaluation/eval_other_methods/seed-vl1.5/results
+configs/_3_large_training/3.5exp/visualize_data_before_start_class_label/
 *.tsv
+*.jpg
 *.pth
 *.jsonl
+configs/_3_large_training/3.3exp/visualize_data_before_start_class_label/
+evaluation/eval_other_methods/ultimate_eval/
 # PyInstaller
 #  Usually these files are written by a python script from a template
 #  before PyInstaller builds the exe, so as to inject date/other infos into it.
@@ -163,32 +169,17 @@ cython_debug/
 #.idea/
 
 .vscode/
-IDEA-Research/
-rex_omni.egg-info/
-website/
-Mountchicken/Rex-Omni-Eval/
-evaluation/batch_eval.py
-evaluation/sbatch_script.sh
-evaluation/sbatch_logs/
+sbatch_logs/
+mounted_files/
+work_dirs/
+trainer_output/
+wandb/
+grpo/work_dirs/
+thinking_dataengine/
+xiaobai/
+configs/_3_large_training/3.3exp/visualize_data_before_start
+debug/
+work_dirs/
+wandb/
 Mountchicken/
-
-# Anchor project: weights, checkpoints, data, temp files
-hf_ckpt/
-finetuning/work_dirs/
-finetuning/dataset/anchor_tsv_1k/
-*.safetensors
-*.bak
-Untitled Folder/
-# Local training artifacts and model weights
-hf_ckpt/
-finetuning/dataset/
-finetuning/work_dirs/
-Untitled Folder/
-__pycache__/
-*.pyc
-*.pt
-*.pth
-*.bin
-*.safetensors
-*.ckpt
-*.onnx
+IDEA-Research/
